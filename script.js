@@ -23,6 +23,7 @@ const commands = {
 	whoami: (args) => {printLine("Prolly an IT guy or something")},
 	date: (args) => {printLine(new Date().toLocaleString())},
 	sudo: (args) => {printLine("Nice try.")},
+	su: (args) => {printLine("Nope.")},
 	search: (args) => {window.open('https://google.com/search?q=' + args.slice(1).join('+'))},
 	fortune: (args) => {
 		const index = Math.floor(Math.random() * fortunes.length);
